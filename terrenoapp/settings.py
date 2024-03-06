@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
 from pathlib import Path
-from decouple import config
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -25,10 +24,10 @@ SECRET_KEY = 'django-insecure-17^f6%3a1i_$tfkoabfajjsmz%dny4aty6mxrzjcod=jcfxl#(
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+# terrenoapp.onrender.com
+ALLOWED_HOSTS = ['*']
 
-ALLOWED_HOSTS = ['terrenoapp.onrender.com']
-
-CSRF_TRUSTED_ORIGINS = ['https://terrenoapp.onrender.com']
+# CSRF_TRUSTED_ORIGINS = ['https://terrenoapp.onrender.com']
 
 
 # Application definition
@@ -87,10 +86,10 @@ WSGI_APPLICATION = 'terrenoapp.wsgi.application'
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": "",
-        "USER": "",
-        "PASSWORD": '',
-        "HOST": "",
+        "NAME": "methodtest2_db",
+        "USER": "admin",
+        "PASSWORD": '2OSh13PV7olVazN3Ge2Wu7HarjcWKO2G',
+        "HOST": "dpg-cnkf02vjbltc73b3efl0-a.oregon-postgres.render.com",
         "PORT": "5432",
     }
 }
