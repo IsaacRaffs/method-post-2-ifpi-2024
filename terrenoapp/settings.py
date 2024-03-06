@@ -25,9 +25,9 @@ SECRET_KEY = 'django-insecure-17^f6%3a1i_$tfkoabfajjsmz%dny4aty6mxrzjcod=jcfxl#(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 # terrenoapp.onrender.com
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['https://method-post-2.onrender.com']
 
-# CSRF_TRUSTED_ORIGINS = ['https://terrenoapp.onrender.com']
+CSRF_TRUSTED_ORIGINS = ['https://method-post-2.onrender.com']
 
 
 # Application definition
